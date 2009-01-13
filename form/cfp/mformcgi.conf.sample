@@ -1,0 +1,39 @@
+title: レポート提出
+admin_name: Yuka Egusa
+admin_mail: yuka@nier.go.jp
+data_dir: data/
+css: .note { color: blue }
+message:
+  top: Here is messeage at the top of page.
+  save_completed: Here is messeage for the time of save completed.
+  RequiredFormMissingError: "下記の値が入力されていません"
+forms:
+  - type: text
+    label: 氏名
+    size: 10
+    require?: true
+    normalize: japanese_e2a
+    validate: ^\d{7}$
+    message:
+      ValidateError: "書式が合っていません。7桁の半角英数字を入力してください"
+    note: "7桁英数字の学籍番号を入力してください。"
+  - type: text
+    label: 氏名
+    require?: true
+  - type: text
+    label: コメント
+  - type: file
+    label: ファイル
+    require?: true
+    filename: "#{@saved_data['form0']}-#{@time}#{extname}"
+    file_suffix: (doc|docx|txt|zip|xls)$
+    note: テキストファイル、Wordファイル、Excelファイルのみアップロードできます。
+    message:
+      FilenameSuffixError: "ファイルの種類が違います。テキストファイル、Wordファイル、Excelファイルのみアップロードできます"
+  - type: radio
+    label: 選択肢
+    choice: [ test1, test2 ]
+  - type: checkbox
+    label: 選択肢(2)
+    choice: [ test1, test2, test3, テスト4 ]
+submit: 入力する
