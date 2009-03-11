@@ -10,13 +10,15 @@ require "kconv"
 SENDMAIL = '/usr/sbin/sendmail'
 FROM = 'TAKAKU.Masao@nims.go.jp'
 
+message = STDIN.read
+#puts message
+
 ARGF.each do |line|
    data = line.chomp.tojis.split(/\t/)
    next if data.empty?
-   message = ERB::new( STDIN.read ).result( binding )
-   #puts message
+   result = ERB::new( message ).result( binding )
    puts data[7]
    open("|#{SENDMAIL} -oi -t -f #{FROM}", "w") do |io|
-      io.puts message
+      io.puts result
    end
 end

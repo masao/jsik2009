@@ -1,9 +1,11 @@
 From: jsik2009@valdes.titech.ac.jp
 To: <%= data[7] %>
-Cc: jsik2009@valdes.titech.ac.jp
-X-Subject: 発表申込採択（情報知識学会年次大会）
 Subject: =?ISO-2022-JP?B?GyRCSC9JPT89OX46TkJyIUo+cEpzQ048MTNYMnEbKEI=?=
 	=?ISO-2022-JP?B?GyRCRy88IUJnMnEhSxsoQg==?=
+MIME-version: 1.0
+Content-type: text/plain; charset=ISO-2022-JP
+Content-Transfer-Encoding: 7bit
+X-Subject: 発表申込採択（情報知識学会年次大会）
 
 <%= data[5] %> 様
 
@@ -21,9 +23,9 @@ Subject: =?ISO-2022-JP?B?GyRCSC9JPT89OX46TkJyIUo+cEpzQ048MTNYMnEbKEI=?=
 
 （１）原稿の提出について
 　発表原稿を4月10日（金）の締め切りまでにご提出下さい。締め切りを遅め
-に(ギリギリのスケジュールで)設定しています。くれぐれも締め切りをお守り
-いただきますようにお願いいたします。締め切りを遅れた場合には掲載できな
-い可能性があります。
+に（ギリギリのスケジュールで）設定しています。くれぐれも締め切りをお守
+りいただきますようにお願いいたします。締め切りを遅れた場合には掲載でき
+ない可能性があります。
 　原稿は，会誌の最新号や当会サイトに掲載されている執筆要領に従ってご作
 成下さい。執筆要領に従っていない原稿は受理されませんのでご注意下さい。
 執筆要綱は以下をご参照ください。
