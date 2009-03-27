@@ -1,5 +1,5 @@
 % $Id$
-\documentclass[twoside]{jsarticle}
+\documentclass[twoside,11pt]{jsarticle}
 \usepackage{times}
 \usepackage{graphicx}
 \usepackage{url}
@@ -7,15 +7,31 @@
 \usepackage{fancyvrb}
 \usepackage{longtable}
 
-\pagestyle{empty}
+\setlength{\headheight}{0truemm}
+\setlength{\headsep}{0truemm}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topmargin}{-1truein}
+\addtolength{\topmargin}{22truemm}
+\setlength{\footskip}{0pt}
+\setlength{\footskip}{-1truein}
+\addtolength{\footskip}{22truemm}
+\setlength{\textheight}{255truemm}
+\setlength{\oddsidemargin}{-1truein}
+\setlength{\evensidemargin}{-1truein}
+\addtolength{\oddsidemargin}{20truemm}
+\addtolength{\evensidemargin}{20truemm}
+\setlength{\textwidth}{172truemm}
+\setlength{\columnsep}{2em}
 
 \usepackage{fancyhdr}
-\thispagestyle{fancy}
+\pagestyle{fancy}
 \fancyhf{}
 \lhead{\bf\large お知らせ}
 %\chead{}
 %\rhead{}
 \renewcommand{\headrulewidth}{0pt}
+\pagestyle{empty}
  
 \newenvironment{authors}{\small\begin{flushright}%
 \vspace*{-.7\baselineskip}%
@@ -26,58 +42,82 @@
 \setlength{\parskip}{0pt}%
 }%
 {\vspace*{-\baselineskip}\end{flushright}}
-\renewcommand{\refname}{参照文献}
+
+\newlength{\sessionwidth}
+\setlength{\sessionwidth}{69truemm}
 
 \begin{document}
- 
-%\twocolumn[
-\section*{第17回（2009年度）情報知識学会年次大会（研究報告会および総会）}
+\noindent{\bf\large お知らせ}
+\vspace*{-.7\baselineskip}
+ %\vspace*{12pt}
+\begin{center}
+{\sf\large 第17回（2009年度）情報知識学会年次大会（研究報告会および総会）}
+\end{center}
+\begin{flushright}\small
+ \begin{tabular}{ll}
+  実行委員長& 研谷紀夫（東京大学）\\
+  副委員長& 江草由佳（国立教育政策研究所）\\
+          &高久雅生（物質・材料研究機構）\\
+          &村井源（東京工業大学）
+ \end{tabular}
+\end{flushright}
+%\vspace*{-.8\baselineskip}
 
 本年の研究報告会・総会は、東京工業大学大岡山キャンパスで開催します。
-また、新たに懇親会よりも気軽に参加できる「情報交流会」も開催いたしますので、奮ってご参加下さい。
+また、新たに懇親会よりも気軽に参加できる「情報交流会」も開催いたします。%ので、奮ってご参加下さい。
 皆様のご参加をお待ちしております。
 
 \begin{enumerate}
  \item 日時：2009年5月16日（土） 
  \item 会場：東京工業大学 大岡山キャンパス 西9号館
        （東京都目黒区大岡山２丁目１２-１）\\
-       URL：\url{http://www.titech.ac.jp/access-and-campusmap/j/o-okayamaO-j.html}\\
-       大岡山駅より徒歩1分
+       \url{http://www.titech.ac.jp/access-and-campusmap/j/o-okayamaO-j.html}\\
+       （最寄り駅: 大岡山駅より徒歩1分）
  \item 参加費：無料
- \item 資料代：会員無料、一般非会員3000 円（学生非会員1000 円）
- \item 情報交流会参加費：1000円（学生無料）
- \item 問い合わせ先：年次大会実行委員会:
- E-mail:\url{jsik2009@valdes.titech.ac.jp}
+ \item 資料代：会員無料、一般非会員3,000 円、学生非会員1,000円
+ \item 情報交流会参加費：1,000円（学生無料）
+ \item お問い合わせ先：年次大会実行委員会
+       \url{jsik2009@valdes.titech.ac.jp}
 \end{enumerate}
-\subsection*{プログラム}
+\vspace*{-\baselineskip}
+\subsection*{プログラム（予定）}
 \noindent
-\begin{tabular}{|c|p{20em}||p{20em}|}
+\begin{tabular}{|c|p{\sessionwidth}||p{\sessionwidth}|}
  \hline
-9:00 & \multicolumn{2}{|c|}{受付開始}\\\hline
-9:20〜10:00 & \multicolumn{2}{|c|}{総会}\\\hline
-&\multicolumn{1}{|c||}{A会場}&\multicolumn{1}{|c|}{B会場}\\\hline
-&\multicolumn{1}{|c||}{セッションA-1}&\multicolumn{1}{|c|}{セッションA-2}\\\hline
+時間&\multicolumn{1}{|c||}{A会場}&\multicolumn{1}{|c|}{B会場}\\\hline\hline
+9:00 & \multicolumn{2}{|c|}{（受付開始）}\\\hline
+9:20〜10:00&\multicolumn{1}{|c||}{\bf 総会}&
+            \multicolumn{1}{|c|}{---} \\\hline
+&\multicolumn{1}{|c||}{\footnotesize\sf セッションA-1}&
+ \multicolumn{1}{|c|}{\footnotesize\sf セッションB-1}\\\hline
 10:00〜10:25&
  トピックマップを用いた人名典拠情報の構築
 
  \begin{authors}
+ \vspace*{-.8\baselineskip}
  ○研谷 紀夫, 内藤 求
- （東京大学大学院情報学環, ナレッジシナジー）
+ （東京大学大学院
+
+  情報学環, ナレッジシナジー）
  \end{authors}
  &
  生物分野におけるWeb APIの適用
 
  %\vspace*{\baselineskip}
  \begin{authors}
+% \vspace*{.2\baselineskip}
  ○重元 康昌, 桑名 良和, 權 娟大, 菅原 秀明
- （富士通株式会社, 東海ソフトウェア, 国立遺伝学研究所）
+ （富士通%株式会社
+  , 東海ソフトウェア, 国立遺伝学研究所）
  \end{authors}
  \\\hline
 10:25〜10:50&
  国内大学図書館におけるデジタルアーカイブの現状
 
  \begin{authors}
+ \vspace*{-.8\baselineskip}
  ○鈴木 良徳, 時実 象一
+
  （愛知大学文学部）
  \end{authors}
 &
@@ -101,22 +141,28 @@
 
  \begin{authors}
   ○權 娟大, 菅原 秀明
-  （国立遺伝学研究所 生命情報･DDBJ研究センター）
+  （国立遺伝学研究所
+
+  生命情報・DDBJ研究センター）
  \end{authors}
  \\\hline
 11:15〜11:40&
  自然言語処理を用いた格言引用システムの開発
 
  \begin{authors}
+ \vspace*{-.8\baselineskip}
   ○牧野 晃典, 梶川 裕矢
-  （東京大学大学院工学系研究科）
+  （東京大学大学院
+
+  工学系研究科）
  \end{authors}
 &
  統合システムを有する分散型熱物性データベースの展開
 
  \begin{authors}
   ○山下 雄一郎, 馬場 哲也
- （産業技術総合研究所 計測標準研究部門 物性統計科 熱物性標準研究室）
+ （産業技術総合研究所 計測標準研究部門% 物性統計科% 熱物性標準研究室
+）
  \end{authors}
  \\\hline
 11:40〜12:05&
@@ -130,20 +176,26 @@
  マテリアルリスク指標データベースの設計と活用
 
  \begin{authors}
+ \vspace*{-.8\baselineskip}
   ○芳須 弘, 藤田 充苗, 原田 幸明
+
   （物質・材料研究機構）
   \end{authors}
  \\\hline
 12:05〜13:00& \multicolumn{2}{|c|}{お昼休憩}\\\hline
 \end{tabular}
 
+ \clearpage
+
+\thispagestyle{empty}
 \noindent
-\begin{tabular}{|c|p{20em}||p{20em}|}
+\begin{tabular}{|c|p{\sessionwidth}||p{\sessionwidth}|}
 \hline
+時間&\multicolumn{1}{|c||}{A会場}&\multicolumn{1}{|c|}{B会場}\\\hline\hline
 13:00〜13:40& \multicolumn{1}{|c||}{論文賞表彰式＋記念講演}&
-              \multicolumn{1}{|c|}{----} \\\hline
-&\multicolumn{1}{|c||}{セッションA-2}&
- \multicolumn{1}{|c|}{セッションB-2}\\\hline
+              \multicolumn{1}{|c|}{---} \\\hline
+&\multicolumn{1}{|c||}{\footnotesize\sf セッションA-2}&
+ \multicolumn{1}{|c|}{\footnotesize\sf セッションB-2}\\\hline
 13:40〜14:05&
  テキスト批評の計量化に向けて−書評の計量分析−
 
@@ -170,8 +222,11 @@
 ネットワーク指標を用いた学際的な論文の抽出
 
  \begin{authors}
+ \vspace*{-.8\baselineskip}
  ○梶川 裕矢, 森 純一郎
-（東京大学大学院工学系研究科総合研究機構）
+（東京大学大学院
+
+  工学系研究科総合研究機構）
 \end{authors}
 \\\hline
 14:30〜14:55&
@@ -179,13 +234,15 @@
 
  \begin{authors}
   ○佐藤 知恵
-（東京工業大学大学院 社会理工学研究科 価値システム専攻）
+（東京工業大学大学院社会理工学研究科価値システム専攻）
 \end{authors}
 &
  産学連携に関するWeb情報の分析 −大学サイトの事例研究−
 
  \begin{authors}
-  ○柿沼 澄男, 孫 媛, 西澤 正己, 大山 敬三, 根岸 正光
+  ○柿沼 澄男, 孫 媛, 西澤 正己, 大山 敬三,
+
+  根岸 正光
   （国立情報学研究所）
  \end{authors}
  \\\hline
@@ -236,21 +293,23 @@
  \end{authors}
 \\\hline
 16:20〜16:35&\multicolumn{2}{|c|}{休憩}\\\hline
-&\multicolumn{1}{|c||}{セッションA-3}&
- \multicolumn{1}{|c|}{セッションB-3}\\\hline
+&\multicolumn{1}{|c||}{\footnotesize\sf セッションA-3}&
+ \multicolumn{1}{|c|}{\footnotesize\sf セッションB-3}\\\hline
 16:35〜17:00&
 完全合理性と限定合理性
 
 \begin{authors}
 ○安平 哲太郎
-（産総研 研究業務推進部門）
+（産業総合研究所 研究業務推進部門）
 \end{authors}
 &
  思考展開図を用いたSQLの可視化手法
 
 \begin{authors}
  ○村川 猛彦, 中川 優
- （和歌山大学システム工学部）
+ （和歌山大学システム
+
+ 工学部）
 \end{authors} 
 \\\hline
 17:00〜17:25&
@@ -268,20 +327,11 @@
  （物質・材料研究機構, 国立教育政策研究所, 東京電機大学, 愛知教育大学, メディア教育開発センター, 国立情報学研究所）
  \end{authors}
  \\\hline
-17:40〜19:30&\multicolumn{2}{|c|}{情報交流会}\\\hline
+17:40〜19:30&\multicolumn{2}{|c|}{\sf 情報交流会}\\\hline
 \end{tabular}
 
-%%% thebibliography 環境用設定
-%begin{latexonly}
-%\renewcommand{\url}{\begingroup \def\UrlLeft{URL:\ <}\def\UrlRight{>}%
-%\urlstyle{tt}\Url}
-%end{latexonly}
-%\begin{thebibliography}{99}
-% \bibitem{}
-%\end{thebibliography}
-
-%%% BibTeX 用設定
-%\bibliographystyle{junsrt}
-%\bibliography{main}
+\vspace*{.2\baselineskip}
+※プログラムは都合により、変更される場合があります。
+学会サイト上に掲載される最新のプログラムをご参照ください。
 
 \end{document}
