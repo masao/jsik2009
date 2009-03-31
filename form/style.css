@@ -1,0 +1,62 @@
+body {
+  background-color: #dfb;
+/*  color: #0b900b;*/
+}
+h1, h2, h3 {
+  clear: both;
+}
+h1 {
+  color: #444;
+  padding: 20px;
+  text-align: center;
+  border: solid #5a5 2px;
+  border-left: solid #5a5 30px;
+  border-right: solid #5a5 30px;
+}
+h2 {
+  border-left: solid #5a5 20px;
+  border-bottom: solid #5a5 2px;
+  color: #444;
+  padding: 5px;
+  padding-left: 10px;
+  margin-left: 20px;
+}
+p {
+text-indent: 1em;
+margin: 1px 20px;
+}
+.last-update {
+text-align: right;
+font-size: smaller;
+}
+address, .id {
+  text-align: right;
+  font-size: small;
+}
+dl.credit {
+  float: right;
+  margin: 0 0 0 .5em;
+  padding: .2em;
+  border: dashed #5a5 1px;
+}
+dl.credit dt {
+  display: block;
+  float:   left;
+  clear:   both;
+}
+dl.credit dd {
+  margin-left:  5.5em;
+  border-left:  1px solid gray;
+  text-align:   left;
+  padding-left: 10px;
+}
+div.authors {
+  font-size: smaller;
+  text-align: right;
+}
+#program {
+  padding: 2px;
+}
+#program td {
+  padding: 2px;
+}
