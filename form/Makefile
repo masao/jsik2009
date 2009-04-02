@@ -1,6 +1,6 @@
 # $Id$
 
-RSYNC=$(HOME)/public_html/rsync.pl
+RSYNC=$(HOME)/cvswork/public_html/rsync.pl
 
 # Rsync to http://etk.sakura.ne.jp/
 rsync:
