@@ -6,15 +6,21 @@ css:
    #form dd { margin-left: 9em }
    p.top { margin: 0 4em 0; color: #f55; }
   "
-data_dir: data/
+data_dir: ../data/
 message:
-  top: "[A-1-1] Author: Title... : Please upload your paper."
+  top: "
+       [<%= pid %>]<br>
+       <%= author %> :<br>
+       「<%= title %>」
+       </p><p>
+       上記発表原稿の送信をお願いします。
+       "
   save_completed: ご投稿ありがとうございました。
   RequiredFormMissingError: "下記の値を入力してください。"
 forms:
   - type: hidden
     label: ID
-    value: A1-1-1
+    value: <%= pid %>
   - type: file
     label: 原稿ファイル
     require?: true
