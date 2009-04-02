@@ -34,6 +34,7 @@ address, .id {
   font-size: small;
 }
 dl.credit {
+  font-size: smaller;
   float: right;
   margin: 0 0 0 .5em;
   padding: .2em;
@@ -58,5 +59,11 @@ div.authors {
   padding: 2px;
 }
 #program td {
-  padding: 2px;
+  padding: 3px;
+  border: solid 1px #888;
+}
+#program th {
+  font-size: 105%;
+  padding: 3px;
+  border: dotted 2px #888;
 }
