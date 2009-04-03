@@ -6,6 +6,7 @@ require "fileutils"
 
 $KCODE = "euc"
 
+erb = open("form/mformcgi.conf.erb"){|io| io.read }
 ARGF.each do |line|
    pid, title, author = line.chomp.split(/\t/)
    title.strip!
@@ -16,8 +17,10 @@ ARGF.each do |line|
    FileUtils.mv( dirname, dirname + ".bak", :force => true )
    STDERR.puts dirname
    FileUtils.cp_r( "skel", dirname, :preserve => true )
-   erb = open("form/mformcgi.conf.erb"){|io| io.read }
    open( File.join( dirname, "mformcgi.conf" ), "w" ) do |io|
       io.puts ERB.new( erb ).result( binding )
    end
+end
+open( File.join( "form/submit", "mformcgi.conf" ), "w" ) do |io|
+   io.puts ERB.new( erb ).result( binding ).gsub( /\.\.\/data/, "./data" )
 end
