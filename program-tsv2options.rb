@@ -20,6 +20,6 @@ ARGF.each do |line|
    #p [ pid, title, author ]
    authors = author.split(/, /)
    authors_str  =authors[0].split[0]
-   authors_str << "ほか" if authors.size > 1
+   # authors_str << "ほか" if authors.size > 1
    puts %Q[<option value="#{ pid.gsub(/-/,"") }">[#{ pid }] #{ authors_str }: #{ shorten(title,20) }</option>]
 end
