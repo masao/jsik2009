@@ -13,9 +13,9 @@ ARGF.each do |line|
    #p [ pid, title, author ]
    dirname = File.join( "form/submit", pid.gsub(/-/, "") )
    FileUtils.rm_rf( dirname + ".bak" )
-   FileUtils.mv( dirname, dirname + ".bak" )
+   FileUtils.mv( dirname, dirname + ".bak", :force => true )
    STDERR.puts dirname
-   FileUtils.cp_r( "skel", dirname )
+   FileUtils.cp_r( "skel", dirname, :preserve => true )
    erb = open("form/mformcgi.conf.erb"){|io| io.read }
    open( File.join( dirname, "mformcgi.conf" ), "w" ) do |io|
       io.puts ERB.new( erb ).result( binding )
