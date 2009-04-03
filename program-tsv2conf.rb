@@ -20,7 +20,7 @@ ARGF.each do |line|
    open( File.join( dirname, "mformcgi.conf" ), "w" ) do |io|
       io.puts ERB.new( erb ).result( binding )
    end
-end
 open( File.join( "form/submit", "mformcgi.conf" ), "w" ) do |io|
    io.puts ERB.new( erb ).result( binding ).gsub( /\.\.\/data/, "./data" )
+end
 end

@@ -1,3 +1,15 @@
-<Files data>
-Deny from all
+AddHandler cgi-script .rb
+<Files "data">
+AuthType Basic
+AuthName "admin area"
+AuthUserFile /home/etk/www/jsik2009/.htpasswd
+Require valid-user
 </Files>
+
+<Files "admin.rb">
+AuthType Basic
+AuthName "admin area"
+AuthUserFile /home/etk/www/jsik2009/.htpasswd
+Require valid-user
+</Files>
+
