@@ -49,7 +49,7 @@ rows.each do |tr|
       tag = "td"
       attr = {}
       style = []
-      tag = "th" if td.sub!( /^\\html_th\s*/, '' )
+      tag = "th" if td.sub!( /^\\htmlth\s*/, '' )
       td.sub!( /\\begin\{tabular\}.*$/, '' )
       td.sub!( /\\begin\{authors\}/, '<div class="authors">' )
       td.sub!(/\\end\{authors\}/, '</div>' )
@@ -58,7 +58,7 @@ rows.each do |tr|
          style << "center" if $2.include?( "c" )
          $3
       end
-      attr[:class] = $1 if td.sub!( /\\html_class\{([^\}]*)\}/, "" )
+      attr[:class] = $1 if td.sub!( /\\htmlclass\{([^\}]*)\}/, "" )
       td.gsub!( /\\(\w+)/ ) do |match|
          case $1
          when "bf", "sf"
