@@ -4,6 +4,10 @@
 lines = ARGF.readlines
 table = ""
 within_tabular = false
+while begin_html = lines.find_index{|e| /^%begin:HTML:ignore/ =~ e }
+   end_html = lines.find_index{|e| /^%end:HTML:ignore/ =~ e }
+   lines[ begin_html .. end_html ] = nil
+end
 lines[ lines.find_index{|e| /^\\subsection/ =~ e } .. -1 ].each do |line|
    line.sub!(/%.*$/, "")
    line.gsub!(/\\([\w\*]+)(\{.*?\})?(\{.*?\})?(\{.*?\})?/) do |match|
@@ -36,12 +40,16 @@ lines[ lines.find_index{|e| /^\\subsection/ =~ e } .. -1 ].each do |line|
    end
 end
 
-puts "<table>"
-table.split(/\\\\/).each do |tr|
+puts "<table id=\"program\">"
+rows = table.split(/\\\\/)
+rows.delete( "\\hline\n" )
+rows.each do |tr|
    puts "<tr>"
    tr.split(/\&/).each do |td|
+      tag = "td"
       attr = {}
       style = []
+      tag = "th" if td.sub!( /^\\html_th\s*/, '' )
       td.sub!( /\\begin\{tabular\}.*$/, '' )
       td.sub!( /\\begin\{authors\}/, '<div class="authors">' )
       td.sub!(/\\end\{authors\}/, '</div>' )
@@ -50,6 +58,7 @@ table.split(/\\\\/).each do |tr|
          style << "center" if $2.include?( "c" )
          $3
       end
+      attr[:class] = $1 if td.sub!( /\\html_class\{([^\}]*)\}/, "" )
       td.gsub!( /\\(\w+)/ ) do |match|
          case $1
          when "bf", "sf"
@@ -60,6 +69,7 @@ table.split(/\\\\/).each do |tr|
          ""
       end
       td.strip!
+      #p td
       if not style.empty?
          style.each do |e|
             td = "<#{e}>#{td}</#{e}>"
@@ -69,7 +79,7 @@ table.split(/\\\\/).each do |tr|
       if not attr.empty?
          attr_s = " " << attr.keys.map{|k| %Q[#{k}="#{attr[k]}"] }.join(" ")
       end
-      puts "<td#{attr_s}>#{td}</td>"
+      puts "<#{tag}#{attr_s}>#{td}</#{tag}>"
    end
    puts "</tr>"
 end

@@ -61,9 +61,12 @@ div.authors {
 #program td {
   padding: 3px;
   border: solid 1px #888;
+  vertical-align: top;
 }
 #program th {
   font-size: 105%;
   padding: 3px;
   border: dotted 2px #888;
 }
+#program .colA { width: 46% }
+#program .colB { width: 46% }
