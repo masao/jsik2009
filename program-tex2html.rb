@@ -69,6 +69,9 @@ rows.each do |tr|
          ""
       end
       td.strip!
+      if td.empty?
+         attr[:class] = "blank"
+      end
       #p td
       if not style.empty?
          style.each do |e|

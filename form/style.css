@@ -70,3 +70,4 @@ div.authors {
 }
 #program .colA { width: 46% }
 #program .colB { width: 46% }
+#program td.blank { border: none; }
