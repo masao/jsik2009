@@ -13,6 +13,7 @@ zip: clean
 	sed -e 's/\(href="\)http:\/\/wwwsoc.nii.ac.jp\/jsik\//\1..\/..\//g' index.html > ./jsik/kenkyu/2009/index.html
 	cp -p program.pdf style.css ./jsik/kenkyu/2009/
 	cp -p kenkyu.html ./jsik/
+	cp -p top.html ./jsik/index.html
 	zip -9r jsik.zip ./jsik/
 	-rm -rf ./jsik/
 
