@@ -1,0 +1,446 @@
+% $Id$
+\documentclass[twoside,11pt]{jsarticle}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{html}
+\usepackage{fancyvrb}
+\usepackage{longtable}
+
+\newcommand{\htmlth}{}
+\newcommand{\htmlclass}[1]{}
+\setlength{\headheight}{0truemm}
+\setlength{\headsep}{0truemm}
+\setlength{\topskip}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\topmargin}{-1truein}
+\addtolength{\topmargin}{20truemm}
+\setlength{\footskip}{0pt}
+\setlength{\footskip}{-1truein}
+\addtolength{\footskip}{22truemm}
+\setlength{\textheight}{257truemm}
+\setlength{\oddsidemargin}{-1truein}
+\setlength{\evensidemargin}{-1truein}
+\addtolength{\oddsidemargin}{20truemm}
+\addtolength{\evensidemargin}{20truemm}
+\setlength{\textwidth}{172truemm}
+\setlength{\columnsep}{2em}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\lhead{\bf\large お知らせ}
+%%\chead{}
+%%\rhead{}
+%\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{empty}
+
+%\renewcommand{\baselinestretch}{.95}
+
+\newenvironment{authors}{\small\begin{flushright}%
+\vspace*{-.7\baselineskip}%
+\setlength{\partopsep}{0pt}%
+\setlength{\topsep}{0pt}%
+\setlength{\itemsep}{0pt}%
+\setlength{\parsep}{0pt}%
+\setlength{\parskip}{0pt}%
+%\hfil%
+}%
+{\vspace*{-\baselineskip}\end{flushright}}
+
+\newlength{\sessionwidth}
+\setlength{\sessionwidth}{69truemm}
+
+\newcommand{\authorsep}{\vspace*{-.92\baselineskip}}
+
+\begin{document}
+%\vspace*{-.7\baselineskip}
+%\noindent{\bf\large お知らせ}
+%\vspace*{-.7\baselineskip}
+%\vspace*{12pt}
+
+\begin{center}
+{\sf\Large 情報知識学会 第17回（2009年度）年次大会（研究報告会および総会）}
+\end{center}
+\begin{flushright}%\small
+ \begin{tabular}{ll}
+  実行委員長& 研谷紀夫（東京大学）\\
+  副委員長& 江草由佳（国立教育政策研究所）\\
+  副委員長&高久雅生（物質・材料研究機構）\\
+  副委員長&村井源（東京工業大学）
+ \end{tabular}
+\end{flushright}
+%\vspace*{-.8\baselineskip}
+
+%本年の研究報告会・総会は、東京工業大学大岡山キャンパスで開催します。
+%また、%新しい試みとして、
+%懇親会の形式を変更し「情報交流会」として、より気軽に参加しやすい懇親の場を設けます%。
+%%また、新たに懇親会よりも気軽に参加できる「情報交流会」も開催いたします。
+%ので、奮ってご参加下さい。
+%皆様のご参加をお待ちしております。
+
+\begin{enumerate}
+ \item 日時：2009年5月16日（土） 
+ \item 会場：東京工業大学 大岡山キャンパス 西9号館
+       （東京都目黒区大岡山２丁目１２-１）\\
+%       \url{http://www.titech.ac.jp/access-and-campusmap/j/o-okayamaO-j.html}\\
+       （最寄り駅: 大岡山駅より徒歩1分）
+ \item 参加費：無料
+ \item 資料代：会員無料、一般非会員3,000円、学生非会員1,000円
+ \item 情報交流会参加費：1,000円（学生無料）
+% \item お問い合わせ先：年次大会実行委員会
+%       \url{jsik2009@valdes.titech.ac.jp}
+\end{enumerate}
+\vspace*{-\baselineskip}
+
+%\subsection*{プログラム（予定）}
+\subsection*{プログラム}
+\noindent
+\begin{tabular}{|c|p{\sessionwidth}||p{\sessionwidth}|}
+ \hline
+\htmlth 時間&\htmlth\htmlclass{colA}\multicolumn{1}{|c||}{A会場（W935）}&\htmlth\htmlclass{colB}\multicolumn{1}{|c|}{B会場（W934）}\\\hline\hline
+9:00 & \multicolumn{2}{|c|}{（受付開始）}\\\hline
+9:20〜10:00&\multicolumn{1}{|c||}{\bf 総会}&
+            \multicolumn{1}{|c|}{---} \\\hline
+&\multicolumn{1}{|c||}{\footnotesize\sf セッションA-1 （座長: 田窪 直規）}&
+ \multicolumn{1}{|c|}{\footnotesize\sf セッションB-1 （座長: 国沢 隆）}\\\hline
+10:00〜10:25&
+ トピックマップを用いた人名典拠情報の構築
+ % 6 pages
+ %EN:Constructing Authority Control File Using Topic Map
+ %EN-AU:Norio TOGIYA, Motomu NAITOU
+
+ \begin{authors}
+ \authorsep
+ ○研谷 紀夫, 内藤 求
+ （東京大学大学院
+
+  情報学環, ナレッジ・シナジー）
+ \end{authors}
+ &
+ 生物分野におけるWeb APIの適用
+ % 6 pages
+ % EN: Web API for Biology
+ % EN-AU: Yasumasa SHIGEMOTO, Yoshikazu KUWANA, Yeondae KWON, Hideaki SUGAWARA
+
+ %\vspace*{\baselineskip}
+ \begin{authors}
+% \vspace*{.2\baselineskip}
+  ○重元 康昌, 桑名 良和, 權 娟大, 菅原 秀明
+ （富士通%株式会社
+  , 東海ソフトウェア, 国立遺伝学研究所）
+ \end{authors}
+ \\\hline
+10:25〜10:50&
+     国内大学図書館におけるデジタルアーカイブの現状
+     % 7 pages
+     % EN:Digital Archives at University Libraries in Japan
+     % EN-AU:Yoshinori SUZUKI, Soichi TOKIZANE
+
+ \begin{authors}
+ \authorsep
+ ○鈴木 良徳, 時実 象一
+
+ （愛知大学文学部）
+ \end{authors}
+&
+ バイオメタデータベースの構築とその応用
+% 6 pages
+% EN: Development of Bio-metadatabase and its applications
+% EN-AU: Tomonori SUZUKI, Satoru MIYAZAKI
+
+ %\vspace*{\baselineskip}
+ \begin{authors}
+  鈴木 智典, ○宮崎 智
+ （東京理科大学薬学部）
+ \end{authors}
+ \\\hline
+10:50〜11:15&
+ 博物館における業務情報の共有とIML (Inter-Museum Loan)システムの可能性
+ % 4 pages
+ % EN: Sharing curatorial infomation among museums and developing ``Inter-Museum Loan'' system
+ % EN-AU: Satoshi TARASHIMA
+
+ \begin{authors}
+  ○田良島 哲
+  （国立文化財機構 東京国立博物館）
+  \end{authors}
+&
+ 個々の疾患に特有な関連遺伝子を特定するアルゴリズム
+ % 6 pages
+ % EN: Identification Algorithm of Associated Genes Specific to a Particular Disease
+ % EN-AU: Yeondae KWON, Hideaki SUGAWARA
+
+ \begin{authors}
+  ○權 娟大, 菅原 秀明
+  （国立遺伝学研究所
+
+  生命情報・DDBJ研究センター）
+ \end{authors}
+ \\\hline
+11:15〜11:40&
+ 自然言語処理を用いた格言引用システムの開発
+ % 6 pages
+ % EN: Development of the Proverb Quoting System using Natural Language Processing
+ % EN-US: Kosuke MAKINO, Yuya KAJIKAWA
+ \begin{authors}
+ %\authorsep
+  ○牧野 晃典, 梶川 裕矢
+  （東京大学大学院
+
+  工学系研究科）
+ \end{authors}
+&
+ 統合システムを有する分散型熱物性データベースの展開
+ % EN: Development of network database system for thermophysical properties data equipped with integrated system
+ % EN-AU: Yuichiro YAMASHITA, Tetsuya BABA
+
+ \begin{authors}
+  ○山下 雄一郎, 馬場 哲也
+ （産業技術総合研究所 計測標準研究部門% 物性統計科% 熱物性標準研究室
+）
+ \end{authors}
+ \\\hline
+11:40〜12:05&
+ 児童書における文章の長さの変化
+ % 6 pages
+ % EN: Sentence Length in Children's Books
+ % EN-AU: Akira YAMAMOTO, Yoko KUSAKA
+
+\begin{authors}
+ 山本 昭, ○日下 陽子
+（愛知大学文学部）
+\end{authors}
+&
+ マテリアルリスク指標データベースの設計と活用
+ % EN: Design and Application of Database for Materials-Risk-Index
+ % EN-AU: Hiroshi YOSHIZU，Kohmei HALADA and Mitsutane FUJITA
+
+ \begin{authors}
+ \authorsep
+  ○芳須 弘, 原田 幸明, 藤田 充苗
+  % author changed (2009-04-14)
+
+  （物質・材料研究機構）
+  \end{authors}
+ \\\hline
+12:05〜13:00& \multicolumn{2}{|c|}{お昼休憩}\\\hline
+13:00〜13:40& \multicolumn{1}{|c||}{論文賞表彰式＋記念講演}&
+              \multicolumn{1}{|c|}{---} \\\hline
+&\multicolumn{1}{|c||}{\footnotesize\sf セッションA-2 （座長: 阪口 哲男）}&
+ \multicolumn{1}{|c|}{\footnotesize\sf セッションB-2 （座長: 石塚 英弘）}\\\hline
+13:40〜14:05&
+ テキスト批評の計量化に向けて−書評の計量分析−
+ % 6 pages
+ % EN: Towards a Quantitative Research Approach to Literary Review: Quantitative Analysis of Book Reviews
+ % EN-AU: Hajime MURAI, Akifumi TOKOSUMI
+\begin{authors}
+○村井 源, 徃住 彰文
+（東京工業大学大学院
+
+ 社会理工学研究科価値システム専攻）
+\end{authors}
+&
+ 論文数・引用数からみたわが国の大学間格差の動向分析
+ % 12 pages
+ % EN: A Trend Analysis on the Disparities among Japanese Universities Observed with the Number of Publications and Citation Counts
+ % EN-AU: Masamitsu NEGISHI
+
+ \begin{authors}
+  ○根岸 正光
+  （国立情報学研究所／
+
+  総合研究大学院大学）
+ \end{authors}
+\\\hline
+%begin:HTML:ignore
+\end{tabular}
+
+ \clearpage
+
+%\thispagestyle{empty}
+\noindent
+\begin{tabular}{|c|p{\sessionwidth}||p{\sessionwidth}|}
+\hline
+時間&\multicolumn{1}{|c||}{A会場（W935）}&\multicolumn{1}{|c|}{B会場（W934）}\\\hline\hline
+%end:HTML:ignore
+14:05〜14:30&
+ 村上春樹の初期三部作における構造解析
+ % title changed (2009-04-14)
+ % 6 pages
+ % EN: Structual Analysis for an Early Trilogy by Haruki Murakami
+ % EN-AU: Akira KUDO, Hajime MURAI, Akifumi TOKOSUMI
+
+\begin{authors}
+ ○工藤 彰, 村井 源, 徃住 彰文
+（東京工業大学大学院社会理工学研究科価値システム専攻）
+\end{authors}
+&
+ネットワーク指標を用いた学際的な論文の抽出
+% EN: Extraction of Interdisciplinary Papers by Network Indicators
+% EN-AU: Yuya KAJIKAWA, Junichiro MORI
+
+ \begin{authors}
+ \authorsep
+ ○梶川 裕矢, 森 純一郎
+（東京大学大学院
+
+  工学系研究科総合研究機構）
+\end{authors}
+\\\hline
+14:30〜14:55&
+ 文学作品群の特徴的語彙と概念カテゴリーの抽出 ― 星新一ショートショートの計量分析―
+ % title changed (2009-04-14)
+ % 6 pages
+ % EN: Extracting Distinctive Vocabularies and Conceptual Categories from a Literary Text: A Quantitative Analysis of Hoshi Shinichi's Short-Short Stories
+ % EN-AU: Chie SATO, Hajime MURAI, Akifumi TOKOSUMI
+
+ \begin{authors}
+  ○佐藤 知恵, 村井 源, 徃住 彰文
+（東京工業大学大学院社会理工学研究科価値システム専攻）
+\end{authors}
+&
+ 産学連携に関するWeb情報の分析 −大学サイトの事例研究−
+ % 5 pages
+ % EN: Universities' Websites and University-Industry Collaborations: A Case Study of Seven National Universities' Websites
+ % EN-AU: Sumio KAKINUMA, Sun YUAN, Masaki NISHIZAWA, Keizo OYAMA, Masamitsu NEGISHI
+ \begin{authors}
+  ○柿沼 澄男, 孫 媛, 西澤 正己, 大山 敬三,
+
+  根岸 正光
+  （国立情報学研究所）
+ \end{authors}
+ \\\hline
+14:55〜15:05&\multicolumn{2}{|c|}{休憩}\\\hline
+15:05〜15:30&
+ 音楽評論論文にみる概念構造の変遷 ―ネットワーク中心性を用いた音楽概念の抽出―
+ % title changed (2009-04-14)
+ % 6 pages
+ % EN: Conceptual Transitions in Papers of Music Criticism: Extracting Musical Concepts based on Network Centrality
+ % EN-AU: Akihiro KAWASE, Hajime MURAI, Akifumi TOKOSUMI
+
+ \begin{authors}
+ ○河瀬 彰宏, 村井 源, 徃住 彰文
+ （東京工業大学 社会理工学研究科 価値システム専攻）
+ \end{authors}
+&
+ 論文からの解析手順知識の網羅的抽出から分かる解析技術の経年的変化の分析
+ % 6 pages
+ % title changed (2009-04-14)
+ % EN: Interannual Change of Bioinformatics Analysis Techniques by Workflow Extraction from Biological Papers
+ % EN-AU: Jiro ARAKI
+
+ \begin{authors}
+  ○荒木 次郎
+  （(株)三菱総合研究所 先端科学イノベーショングループ）
+ \end{authors}
+ \\\hline
+15:30〜15:55&
+ 心の状態と言語的特徴：ブログにおける商品紹介文の分析
+ % 8 pages
+ % EN: States of mind and stylistic features: The effects of affiliate advertising
+ % EN-AU: Kaori SAITO, Gen MURAI, Akifumi TOKOSUMI
+
+\begin{authors}
+○斉藤 香里, 村井 源, 徃住 彰文
+ （東京工業大学大学院社会理工学研究科価値システム専攻）
+\end{authors}
+&
+ 協調フィルタリングを用いた共著関係の予測
+ % 6 pages
+ % EN: Co-authorship Prediction based on collaborative filtering
+ % EN-AU: Yukio HORI, Takashi NAKAYAMA, Yoshiro IMAI
+
+ \begin{authors}
+% \authorsep
+ ○堀 幸雄, 中山 堯, 今井慈郎
+ （香川大学総合情報センター, 神奈川大学理学部, 香川大学工学部）
+ \end{authors}
+\\\hline
+15:55〜16:20&
+書評中の語を用いた図書に対する感性パラメータ自動設定の最適化
+
+\begin{authors}
+ ○原田 隆史, 池内 正明
+ （慶應義塾大学文学部）
+\end{authors}
+&
+世代間共同研究による知識移転のモデル化
+% 4 pages
+% EN: Modeling Knowledge Transfer through Inter-Generational Research Collaboration
+% EN-AU: Takaki FUKUDA, Katsuhiro UMEMOTO
+
+ \begin{authors}
+ ○福田 毅哉, 梅本 勝博
+ （北陸先端科学技術大学院大学知識科学研究科／東京大学物性研究所, 北陸先端科学技術大学院大学知識科学研究科）
+ \end{authors}
+\\\hline
+16:20〜16:35&\multicolumn{2}{|c|}{休憩}\\\hline
+&\multicolumn{1}{|c||}{\footnotesize\sf セッションA-3 （座長: 梶川 裕矢）}&
+ \multicolumn{1}{|c|}{\footnotesize\sf セッションB-3 （座長: 堀 幸雄）}\\\hline
+16:35〜17:00&
+完全合理性と限定合理性
+% EN: Complete rationality and definitive rationality
+% EN-AU: Tetsutaro YASUHIRA
+
+\begin{authors}
+○安平 哲太郎
+（産業技術総合研究所
+
+ 研究業務推進部門）
+\end{authors}
+&
+ 思考展開図を用いたSQL文の可視化手法
+ % 6 pages
+ % title changed (2009-04-14)
+ % EN: Graphical Expression of SQL Statements using Clamshell Diagram
+ % EN-AU: Takehiko MURAKAWA, Masaru NAKAGAWA
+
+\begin{authors}
+ ○村川 猛彦, 中川 優
+ （和歌山大学
+
+ システム工学部）
+\end{authors} 
+\\\hline
+17:00〜17:25&
+情報過程の諸相
+% EN: Aspects of Information Process
+% EN-AU: Keisuke TANATSUGU
+
+\begin{authors}
+○棚次 奎介
+（（元）北九州市立大学
+
+ 基盤教育センター）
+\end{authors}
+&
+サーチエンジン検索結果ページにおける視線情報の分析
+% 12 pages
+% EN: Analysis of User Eye Movements during Viewing of Search Engine Results Pages in Web Information Seeking Tasks
+% EN-AU: Masao TAKAKU, Yuka EGUSA, Hitoshi TERAI, Hitomi SAITO, Makiko MIWA, Noriko KANDO
+
+ \begin{authors}
+ ○高久 雅生, 江草 由佳, 寺井 仁, 齋藤 ひとみ, 三輪 眞木子, 神門 典子
+ （物質・材料研究機構, 国立教育政策研究所, 東京電機大学, 愛知教育大学, メディア教育開発センター, 国立情報学研究所）
+ \end{authors}
+ \\\hline
+17:40〜19:30&\multicolumn{2}{|c|}{\sf 情報交流会（会場: コラボレーションルーム(2F)）}\\\hline
+\end{tabular}
+
+%\vspace*{.2\baselineskip}
+%※プログラムは都合により、変更される場合があります。
+%学会サイト上に掲載される最新のプログラムをご参照ください。
+%
+%\begin{flushright}
+%{\sf
+%最終更新: 2009年4月23日}
+%\end{flushright}
+\end{document}
+% Local Variables:
+% time-stamp-line-limit: 1000
+% time-stamp-start: "最終更新: "
+% time-stamp-end: "}"
+% time-stamp-format: "%:y年%:m月%:d日"
+% End:
