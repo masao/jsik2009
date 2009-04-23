@@ -10,7 +10,8 @@ rsync:
 
 zip: clean
 	-mkdir 2009
-	cp -p index.html style.css ./2009/
+	sed -e 's/\(href="\)http:\/\/wwwsoc.nii.ac.jp\/jsik\//\1..\/..\//g' index.html > ./2009/index.html
+	cp -p program.pdf style.css ./2009/
 	zip -9r 2009.zip 2009/
 	-rm -rf 2009
 
