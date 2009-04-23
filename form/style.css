@@ -33,6 +33,19 @@ address, .id {
   text-align: right;
   font-size: small;
 }
+dl dt {
+  display: block;
+  float:   left;
+  clear:   both;
+  width: 5.5em;
+  text-align: right;
+}
+dl dd {
+  margin-left:  6em;
+  border-left:  1px solid gray;
+  text-align:   left;
+  padding-left: 10px;
+}
 dl.credit {
   font-size: smaller;
   float: right;
@@ -40,16 +53,8 @@ dl.credit {
   padding: .2em;
   border: dashed #5a5 1px;
 }
-dl.credit dt {
-  display: block;
-  float:   left;
-  clear:   both;
-}
-dl.credit dd {
-  margin-left:  5.5em;
-  border-left:  1px solid gray;
-  text-align:   left;
-  padding-left: 10px;
+dl.summary {
+  margin-left: 2em;
 }
 div.authors {
   font-size: smaller;
