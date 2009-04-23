@@ -9,11 +9,12 @@ rsync:
 	$(RSYNC) ./ etk:www/jsik2009/
 
 zip: clean
-	-mkdir 2009
-	sed -e 's/\(href="\)http:\/\/wwwsoc.nii.ac.jp\/jsik\//\1..\/..\//g' index.html > ./2009/index.html
-	cp -p program.pdf style.css ./2009/
-	zip -9r 2009.zip 2009/
-	-rm -rf 2009
+	-mkdir -p jsik/kenkyu/2009/
+	sed -e 's/\(href="\)http:\/\/wwwsoc.nii.ac.jp\/jsik\//\1..\/..\//g' index.html > ./jsik/kenkyu/2009/index.html
+	cp -p program.pdf style.css ./jsik/kenkyu/2009/
+	cp -p kenkyu.html ./jsik/
+	zip -9r jsik.zip ./jsik/
+	-rm -rf ./jsik/
 
 clean:
-	-rm -rf 2009 2009.zip
+	-rm -rf jsik jsik.zip
