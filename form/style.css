@@ -26,8 +26,8 @@ text-indent: 1em;
 margin: 1px 20px;
 }
 .last-update {
-text-align: right;
-font-size: smaller;
+  float: right;
+  font-size: smaller;
 }
 address, .id {
   text-align: right;
