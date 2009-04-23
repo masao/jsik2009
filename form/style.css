@@ -28,6 +28,7 @@ margin: 1px 20px;
 .last-update {
   float: right;
   font-size: smaller;
+  margin-left: 1em;
 }
 address, .id {
   text-align: right;
