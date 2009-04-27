@@ -44,6 +44,12 @@ puts "<table id=\"program\">"
 rows = table.split(/\\\\/)
 rows.delete( "\\hline\n" )
 rows.each do |tr|
+   if tr =~ /\\htmlth/
+      thead = true
+   else
+      thead = false
+   end
+   puts "<thead>" if thead
    puts "<tr>"
    tr.split(/\&/).each do |td|
       tag = "td"
@@ -85,6 +91,7 @@ rows.each do |tr|
       puts "<#{tag}#{attr_s}>#{td}</#{tag}>"
    end
    puts "</tr>"
+   puts "</thead>" if thead
 end
 puts "</table>"
 #puts table
